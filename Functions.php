@@ -35,10 +35,10 @@ function getEntrysPrinted($db)
 {
     // create a SQL query as a string
     $sql_query = "SELECT * FROM BlogView";
-    echo "something before executing sql";
+    //echo "something before executing sql";
     // execute the SQL query
     $result = $db->query($sql_query);
-    echo "something after executing sql";
+    //echo "something after executing sql";
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
     while ($row = $result->fetch_array()) {

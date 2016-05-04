@@ -10,43 +10,43 @@ include("blogHeader.php");
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             ?>
 
-        <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
-            <!-- action="showBugs.php" method="get" -->
-            <table>
-                <tr>
-                    <td>Entry Title</td>
-                    <td><input type="text" name="txtTitle" size="72%" placeholder="Blog Title" required></td>
-                </tr>
-                <tr>
-                    <td>Entry Summary</td>
-                    <td><textarea rows="4" cols="25" name="txtSum" style="width: 445px;"
-                                  placeholder="Blog Summary" required></textarea></td>
-                </tr>
-                <tr>
-                    <td>Category</td>
-                    <td>
-                        <select name="comboCat" required style="width: 445px;">
-                            <option value='Work'>Work</option>
-                            <option value='University'>University</option>
-                            <option value='Family'>Family</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Submitted By:</td>
-                    <td><input type="text" name="txtName" size="72%" placeholder="Author" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="Submit" style="float: right;"></td>
-                </tr>
-            </table>
-        </form>
+            <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
+                <!-- action="showBugs.php" method="get" -->
+                <table>
+                    <tr>
+                        <td>Entry Title</td>
+                        <td><input type="text" name="txtTitle" size="72%" placeholder="Blog Title" required></td>
+                    </tr>
+                    <tr>
+                        <td>Entry Summary</td>
+                        <td><textarea rows="4" cols="25" name="txtSum" style="width: 445px;"
+                                      placeholder="Blog Summary" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td>
+                            <select name="comboCat" required style="width: 445px;">
+                                <option value='Work'>Work</option>
+                                <option value='University'>University</option>
+                                <option value='Family'>Family</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Submitted By:</td>
+                        <td><input type="text" name="txtName" size="72%" placeholder="Author" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit" style="float: right;"></td>
+                    </tr>
+                </table>
+            </form>
 
 
-        <?
-            echo "SAME PAGE RE-ENTRY";
+            <?
+            //echo "SAME PAGE RE-ENTRY";
             //do nothing
-            // loop through the superglobal GET array
+            //TEST - loop through the superglobal GET array
             /*foreach ($_GET as $key => $value) {
             PrintKeyAndValue($key, $value);
             }*/
@@ -66,9 +66,9 @@ include("blogHeader.php");
             //ADD DATA TO DB
             addBlogEntry($db1, $title, $summary, $category, $author);
 
-            PrintBlog($title, $summary, $category, $author);
+            //test -PrintBlog($title, $summary, $category, $author);
             //redirects to showBugs page
-          //TEMP  header('Location: blog.php');
+            header('Location: blog.php');
 
         } else
             //redirects to index page
