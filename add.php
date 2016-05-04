@@ -4,7 +4,7 @@ include("blogHeader.php");
 <!--START OF MAIN -->
 <main class="grid-container">
 
-    <section id="mainSectionAdd" class="grid-66 tablet-grid-66 mobile-grid-66">
+    <section id="mainSectionAdd" class="grid-70 tablet-grid-70 mobile-grid-70">
 
 
     <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="get">

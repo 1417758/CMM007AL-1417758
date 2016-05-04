@@ -1,18 +1,23 @@
 
-#figHeader{
-    width: 350px;
+#figHeader {
+    width: 320px;
 }
 
-#article1{
-
+#article1 {
+    padding: 10px 10px 10px 10px;
 }
 
-#article1Side{
+#article1Side {
     background-color: #DBC9DF;
     color: white;
     margin: 0 0 0 0px;
     padding: 0px 10px 10px 10px;
     width: 100%;
+}
+
+#mainSectionAdd{
+
+    flex: auto;
 }
 
 h1, h2, h3 {
@@ -25,7 +30,7 @@ h2, h3 {
     padding: 10px 0 0 0px;
 }
 
-#mainSection{
+#mainSection {
     margin: 0 0 0 -2%;
 }
 
