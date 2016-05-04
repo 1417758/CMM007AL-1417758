@@ -19,6 +19,7 @@
     padding: 50px 50px 50px 50px;
     flex: auto;
     float: none;
+    display: flex;
 }
 
 h1, h2, h3 {
