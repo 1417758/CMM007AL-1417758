@@ -27,6 +27,9 @@
     float: none;
     display: inline-flex;
     align-content: center;
+    alignment: center;
+;
+
 }
 
 h1, h2, h3 {
