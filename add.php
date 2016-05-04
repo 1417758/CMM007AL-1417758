@@ -4,10 +4,8 @@ include("blogHeader.php");
 <!--START OF MAIN -->
 <main class="grid-container">
 
-    <section id="mainSectionAdd" class="grid-70 tablet-grid-70 mobile-grid-70">
-
-
-            <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
+    <section id="mainSectionAdd" class="grid-95 tablet-grid-95 mobile-grid-95">
+         <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
                 <!-- action="showBugs.php" method="get" -->
                 <table>
                     <tr>
@@ -70,7 +68,6 @@ include("blogHeader.php");
             //redirects to index page
             header('Location: index.php');
         ?>
-
     </section>
 
 </main>
