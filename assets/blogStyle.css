@@ -23,9 +23,10 @@
 }
 
 #mainSectionAdd{
-    padding: 50px 50px 50px 100px;
+
     float: none;
     display: inline-flex;
+    align-content: center;
 }
 
 h1, h2, h3 {
