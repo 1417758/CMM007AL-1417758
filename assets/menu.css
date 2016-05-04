@@ -4,7 +4,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #bbbbbb;
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     text-transform: capitalize;
     width: 960px;
 }
