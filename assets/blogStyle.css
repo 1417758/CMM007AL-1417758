@@ -4,7 +4,7 @@
 }
 
 #article1 {
-    padding: 10px 10px 10px 10px;
+    padding: 50px 50px 50px 50px;
 }
 
 #article1Side {
@@ -16,7 +16,7 @@
 }
 
 #mainSectionAdd{
-
+    padding: 50px 50px 50px 50px;
     flex: auto;
 }
 
