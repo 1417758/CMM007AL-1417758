@@ -20,7 +20,7 @@ include("blogHeader.php");
                 <tr>
                     <td>Category</td>
                     <td>
-                        <select name="comboCat" required style="width: 445px;">
+                        <select name="comboCat" required style="width: 72%;">
                             <option value='Work'>Work</option>
                             <option value='University'>University</option>
                             <option value='Family'>Family</option>
