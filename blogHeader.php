@@ -22,6 +22,7 @@ include("Functions.php");
         <span>
             Because the internet needs to know what I think
         </span>
+        <span id="spanCat">here CATEGORY YORU</span>
     </section>
 
     <ul id="mainNav">

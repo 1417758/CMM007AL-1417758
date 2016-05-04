@@ -1,14 +1,15 @@
 <?php
 
-
 //function
-function PrintBlog($title, $sum, $cat, $author)
+function getCat()
 {
-    print("Entry Title: " . $title) . "<br>";
-    print("Entry Summary: " . $sum) . "<br>";
-    print("Entry Category: " . $cat) . "<br>";
-    print("Entry Author: " . $author) . "<br>";
-    print "<hr>";
+        //get category";
+        if (isset($_GET['category'])) {
+            $cat = $_GET['category'];
+            echo $cat;
+          //  return $cat;
+        }
+
 }
 
 function PrintBlog2($title, $sum, $cat, $author)
