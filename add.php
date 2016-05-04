@@ -65,6 +65,8 @@ include("blogHeader.php");
             $author = $_POST['txtName'];
             //ADD DATA TO DB
             addBlogEntry($db1, $title, $summary, $category, $author);
+
+            PrintBlog($title, $summary, $category, $author);
             //redirects to showBugs page
           //TEMP  header('Location: blog.php');
 
