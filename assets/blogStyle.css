@@ -1,4 +1,8 @@
 
+#figHeader{
+    width: 2000px;
+}
+
 #article1{
 
 }
@@ -11,6 +15,15 @@
     width: 100%;
 }
 
+h1, h2, h3 {
+    text-transform: capitalize;
+    margin: 0 0 0 0px;
+    padding: 0px 0 0 0px;
+}
+
+h2, h3 {
+    padding: 10px 0 0 0px;
+}
 
 #mainSection{
     margin: 0 0 0 -2%;
