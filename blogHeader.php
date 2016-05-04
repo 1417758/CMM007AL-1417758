@@ -14,7 +14,7 @@
 <!--START OF HEADER -->
 <header>
     <section>
-        <h4>myBlog</h4>
+        <h2>myBlog</h2>
         <span>
             Because jthe internet needs to knwo what I think
         </span>
