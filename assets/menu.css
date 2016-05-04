@@ -19,6 +19,7 @@ li {
     border-right: 1px solid #bbb;
     justify-items: center;
     text-align: justify;
+    border-color: white;
 }
 
 li a {
