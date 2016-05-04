@@ -66,7 +66,7 @@ include("blogHeader.php");
             //ADD DATA TO DB
             addBlogEntry($db1, $title, $summary, $category, $author);
             //redirects to showBugs page
-            header('Location: blog.php');
+          //TEMP  header('Location: blog.php');
 
         } else
             //redirects to index page
