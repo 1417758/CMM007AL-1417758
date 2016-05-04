@@ -1,0 +1,40 @@
+
+html {
+    font-family: Calibri;
+    /*font-size: 0.8em;*/
+    font-size: 12pt;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 960px;
+    max-width: 1000px;
+    min-width: 500px;
+
+    height: 960px;
+    max-height: 1000px;
+    min-height: 700px;
+    text-align: justify;
+}
+
+header {
+    width: inherit;
+    height: 30%;
+}
+
+main {
+    width: 960px;
+    height: 960px;
+    height: 60%;
+    max-height: 960px;
+}
+
+/* page's footer */
+#endFooter {
+    text-align: center;
+    width: 960px;
+    height: 5%;
+    background-color: #363636;
+    color: white;
+}
+
+

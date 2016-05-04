@@ -1,0 +1,23 @@
+Database Name
+CMM007ALDB-1417758
+
+Location
+South Central US
+
+Hostname
+us-cdbr-azure-southcentral-e.cloudapp.net
+
+Port
+3306
+
+Username
+b905a3d391079c
+
+Password
+dc98db67
+
+Connection String
+Database=CMM007ALDB-1417758;Data Source=us-cdbr-azure-southcentral-e.cloudapp.net;User Id=b905a3d391079c;Password=dc98db67
+
+Subscription Id
+236b36b6-9869-4781-8634-0590a2a55689
