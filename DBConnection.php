@@ -9,6 +9,7 @@ $db1 = new mysqli(
 if (!$db1) {
     echo "error 2";
     die('Connect Error: ' . mysqli_connect_errno());
-}
+}else
+    echo "connected successfully";
 
 ?>
