@@ -1,61 +1,52 @@
 <?php
 
-static $count = 4;
 
 //function
-function PrintBug($name, $cat, $sum)
+function PrintEntry($title, $sum, $cat, $author)
 {
-    print("Bug Name: " . $name) . "<br>";
-    print("Bug Category: " . $cat) . "<br>";
-    print("Bug Summary: " . $sum) . "<br>";
+    print("Entry Title: " . $title) . "<br>";
+    print("Entry Summary: " . $sum) . "<br>";
+    print("Entry Category: " . $cat) . "<br>";
+    print("Entry Author: " . $author) . "<br>";
     print "<hr>";
 }
 
-function addBug($db, $name, $sum, $cat)
+function addEntry($db, $title, $sum, $cat, $author)
 {
     //try {
-        //*NOTE TEST
-        // PrintBug($name, $sum, $cat);
-        //$count = $GLOBALS['count'];//print "global variable count is at: " . $count;// print "<hr>";
+    //*NOTE TEST
+    // PrintEntry($title, $sum, $cat, $author);
 
-        // create a SQL query as a string
-        $sql_query = "INSERT INTO Bugs (bugName, bugSummary, bugCategory) VALUES ('$name', '$sum', '$cat')";
+    // create a SQL query as a string
+    $sql_query = "INSERT INTO BlogView (entryTitle, entrySummary, category, submitter) VALUES ('$title', '$sum', '$cat', '$author')";
+
         echo "something before executing sql";
 
         // execute the SQL query
         if (mysqli_query($db, $sql_query))
-            echo "sql query executed succesfully" . "<br/>" . mysqli_affected_rows();
+            echo "sql query executed succesfully" . " < br />" . mysqli_affected_rows();
         else
-            echo "Error: " . $sql_query . "<br/>" . mysqli_error($db);
-            //throw new Exception("Error: " . $sql_query . "<br/>" . mysqli_error($db));
-
-        //increment counter
-        //$GLOBALS['count']++;
-        // print $GLOBALS['count'];
-   /* } catch (Exception $e) {
-        throw new Exception("Value must be 1 or below");
-        echo $e;
-        echo "Error: " . $sql_query . "<br/>" . mysqli_error($db);
-    }*/
+            echo "Error: " . $sql_query . " < br />" . mysqli_error($db);
+            //throw new Exception("Error: " . $sql_query . " < br />" . mysqli_error($db));
 }
 
 
-function getBugsPrinted($db)
+function getEntrysPrinted($db)
 {
     // create a SQL query as a string
-    $sql_query = "SELECT * FROM Bugs";
+    $sql_query = "SELECT * FROM BlogView";
     // execute the SQL query
     $result = $db->query($sql_query);
 
     // iterate over $result object one $row at a time
     // use fetch_array() to return an associative array
     while ($row = $result->fetch_array()) {
-        $a = $row['bugName'];
-        $b = $row['bugSummary'];
-        $c = $row['bugCategory'];
+        $t = $row['entryTitle'];
+        $s = $row['entrySummary'];
+        $c = $row['category'];
+        $a = $row['submitter'];
 
-        // echo "<p>{$a}</p>";
-        PrintBug($a, $b, $c);
+        PrintEntry($t, $s, $c, $a);
     }
 }
 

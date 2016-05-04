@@ -23,9 +23,9 @@ include("blogHeader.php");
                 <td>Category</td>
                 <td>
                     <select name="comboCat" required style="width: 445px;">
-                        <option value='politics'>Politics</option>
-                        <option value='sport'>Sport</option>
-                        <option value='technology'>Technology</option>
+                        <option value='work'>Work</option>
+                        <option value='university'>University</option>
+                        <option value='family'>Family</option>
                     </select>
                 </td>
             </tr>
