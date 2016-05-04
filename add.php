@@ -14,7 +14,7 @@ include("blogHeader.php");
                 </tr>
                 <tr>
                     <td>Entry Summary</td>
-                    <td><textarea rows="4" cols="25" name="txtSum" style="width: 450px;"
+                    <td><textarea rows="4" cols="25" name="txtSum" style="width: 453px;"
                                   placeholder="Blog Summary" required></textarea></td>
                 </tr>
                 <tr>
