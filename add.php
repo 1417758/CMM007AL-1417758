@@ -42,7 +42,6 @@ include("blogHeader.php");
                 </table>
             </form>
 
-
             <?
             //echo "SAME PAGE RE-ENTRY";
             //do nothing
@@ -50,8 +49,6 @@ include("blogHeader.php");
             /*foreach ($_GET as $key => $value) {
             PrintKeyAndValue($key, $value);
             }*/
-
-
         } //otherwise print Post stuff (data entered to form)
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // loop through the superglobal POST array
@@ -73,8 +70,6 @@ include("blogHeader.php");
         } else
             //redirects to index page
             header('Location: index.php');
-
-
         ?>
 
     </section>
