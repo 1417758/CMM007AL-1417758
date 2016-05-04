@@ -1,5 +1,5 @@
 <?php
-include("blogFooter.php");
+include("blogHeader.php");
 ?>
 <!--START OF MAIN -->
 <main class="grid-container">

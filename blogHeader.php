@@ -16,7 +16,7 @@
     <section>
         <h2>myBlog</h2>
         <span>
-            Because jthe internet needs to knwo what I think
+            Because the internet needs to know what I think
         </span>
     </section>
 
