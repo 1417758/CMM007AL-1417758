@@ -1,15 +1,11 @@
 <?php
-include("bugHeader.php");
+include("blogHeader.php");
 ?>
 <!--START OF MAIN -->
 <main class="grid-container">
-    <aside id="asideLeft" class="grid-30 tablet-grid-30 mobile-grid-30">
-        <?php
-        include("bugNavig.php");
-        ?>
-    </aside>
 
-    <section id="mainSection" class="grid-60 tablet-grid-60 mobile-grid-60">
+
+    <section id="mainSectionBlog" class="grid-90 tablet-grid-90 mobile-grid-90">
 
         <?php
         //get data entered by user on insert bug page";
@@ -32,6 +28,6 @@ include("bugHeader.php");
 </main>
 <!--END OF MAIN -->
 <?php
-include("rguFooter.php");
+include("blogFooter.php");
 ?>
 
