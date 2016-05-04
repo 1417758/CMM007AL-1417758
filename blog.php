@@ -11,17 +11,17 @@ include("blogHeader.php");
         //get data entered by user on insert bug page";
         /*   $a = $_GET['txtName'];
            $b = $_GET['txtSum'];
-           $c = $_GET['txtCat'];
+           $c = $_GET['txtCat'];*/
 
-        /*   //add data from addBugs.php page
-           if (isset($_GET['txtName'])) {
-               //ADD DATA TO DB
-               addBug($db1, $a, $b, $c);
-           }
-   */
-        //display all bugs
-        getEntrysPrinted($db1);
-
+        //add data from addBugs.php page
+        if (isset($_GET['category'])) {
+            $cat = $_GET['category'];
+            //display all blogs by category
+            getEntrysPrintedByCat($db1, $cat);
+        } else {
+            //display all blogs
+            getEntrysPrinted($db1);
+        }
         ?>
     </section>
 
