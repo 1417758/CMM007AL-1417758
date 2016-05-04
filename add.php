@@ -1,38 +1,37 @@
 <?php
-include("bugHeader.php");
+include("blogFooter.php");
 ?>
 <!--START OF MAIN -->
 <main class="grid-container">
-    <aside id="asideLeft" class="grid-30 tablet-grid-30 mobile-grid-30">
-        <?php
-        include("bugNavig.php");
-        ?>
-    </aside>
 
-    <section id="mainSection" class="grid-60 tablet-grid-60 mobile-grid-60">
+    <section id="mainSectionAdd" class="grid-66 tablet-grid-66 mobile-grid-66">
 
 
-        <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="get">
+    <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="get">
         <!-- action="showBugs.php" method="get" -->
         <table>
             <tr>
-                <td>Bug Name</td>
-                <td><input type="text" name="txtName" size="72%" placeholder="Bug Name" required></td>
+                <td>Entry Title</td>
+                <td><input type="text" name="txtName" size="72%" placeholder="Blog Title" required></td>
             </tr>
             <tr>
-                <td>Bug Summary</td>
+                <td>Entry Summary</td>
                 <td><textarea rows="4" cols="25" name="txtSum" style="width: 445px;"
-                              placeholder="Bug Category" required></textarea></td>
+                              placeholder="Blog Summary" required></textarea></td>
             </tr>
             <tr>
-                <td>Bug Category</td>
+                <td>Category</td>
                 <td>
-                    <select name="txtCat" required style="width: 445px;">
-                        <option value='Android'>Android</option>
-                        <option value='iOS'>iOS</option>
-                        <option value='Windows'>Windows</option>
+                    <select name="comboCat" required style="width: 445px;">
+                        <option value='politics'>Politics</option>
+                        <option value='sport'>Sport</option>
+                        <option value='technology'>Technology</option>
                     </select>
                 </td>
+            </tr>
+            <tr>
+                <td>Submitted By:</td>
+                <td><input type="text" name="txtName" size="72%" placeholder="Author" required></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Submit" style="float: right;"></td>
@@ -76,6 +75,6 @@ include("bugHeader.php");
 </main>
 <!--END OF MAIN -->
 <?php
-include("rguFooter.php");
+include("blogFooter.php");
 ?>
 
