@@ -6,7 +6,7 @@ function getCat()
         //get category";
         if (isset($_GET['category'])) {
             $cat = $_GET['category'];
-            echo $cat;
+            echo "current category selected is ".$cat;
           //  return $cat;
         }
 

@@ -4,8 +4,10 @@
 }
 #spanCat{
     float: right;
-    margin: 0% -10% 15% 0%;
+    margin-right: 15%;
+    margin-bottom: -10%;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 #article1, #mainSectionBlog {
