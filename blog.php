@@ -13,18 +13,18 @@ include("bugHeader.php");
 
         <?php
         //get data entered by user on insert bug page";
-        $a = $_GET['txtName'];
-        $b = $_GET['txtSum'];
-        $c = $_GET['txtCat'];
+        /*   $a = $_GET['txtName'];
+           $b = $_GET['txtSum'];
+           $c = $_GET['txtCat'];
 
-        //add data from addBugs.php page
-        if (isset($_GET['txtName'])) {
-            //ADD DATA TO DB
-            addBug($db1, $a, $b, $c);
-        }
-
+        /*   //add data from addBugs.php page
+           if (isset($_GET['txtName'])) {
+               //ADD DATA TO DB
+               addBug($db1, $a, $b, $c);
+           }
+   */
         //display all bugs
-        getBugsPrinted($db1);
+        getEntrysPrinted($db1);
 
         ?>
     </section>
