@@ -6,9 +6,6 @@ include("blogHeader.php");
 
     <section id="mainSectionAdd" class="grid-70 tablet-grid-70 mobile-grid-70">
 
-        <?
-        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-            ?>
 
             <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
                 <!-- action="showBugs.php" method="get" -->
@@ -42,8 +39,10 @@ include("blogHeader.php");
                 </table>
             </form>
 
-            <?
-            //echo "SAME PAGE RE-ENTRY";
+        <?
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+
+        //echo "SAME PAGE RE-ENTRY";
             //do nothing
             //TEST - loop through the superglobal GET array
             /*foreach ($_GET as $key => $value) {
