@@ -9,7 +9,7 @@ include("blogHeader.php");
         <?
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             ?>
-        }
+
         <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
             <!-- action="showBugs.php" method="get" -->
             <table>
@@ -26,9 +26,9 @@ include("blogHeader.php");
                     <td>Category</td>
                     <td>
                         <select name="comboCat" required style="width: 445px;">
-                            <option value='work'>Work</option>
-                            <option value='university'>University</option>
-                            <option value='family'>Family</option>
+                            <option value='Work'>Work</option>
+                            <option value='University'>University</option>
+                            <option value='Family'>Family</option>
                         </select>
                     </td>
                 </tr>
@@ -44,13 +44,13 @@ include("blogHeader.php");
 
 
         <?
-        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-            //do nothing
             echo "SAME PAGE RE-ENTRY";
+            //do nothing
             // loop through the superglobal GET array
             /*foreach ($_GET as $key => $value) {
             PrintKeyAndValue($key, $value);
             }*/
+
 
         } //otherwise print Post stuff (data entered to form)
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
