@@ -2,7 +2,7 @@
 
 
 //function
-function PrintEntry($title, $sum, $cat, $author)
+function PrintBlog($title, $sum, $cat, $author)
 {
     print("Entry Title: " . $title) . "<br>";
     print("Entry Summary: " . $sum) . "<br>";
@@ -11,7 +11,7 @@ function PrintEntry($title, $sum, $cat, $author)
     print "<hr>";
 }
 
-function addEntry($db, $title, $sum, $cat, $author)
+function addBlogEntry($db, $title, $sum, $cat, $author)
 {
     //try {
     //*NOTE TEST
@@ -46,7 +46,7 @@ function getEntrysPrinted($db)
         $c = $row['category'];
         $a = $row['submitter'];
 
-        PrintEntry($t, $s, $c, $a);
+        PrintBlog($t, $s, $c, $a);
     }
 }
 
