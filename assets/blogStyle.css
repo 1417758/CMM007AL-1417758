@@ -23,8 +23,7 @@
 }
 
 #mainSectionAdd{
-
-    float: none;
+    padding: 50px 50px 50px 125px;
     display: inline-flex;
     align-content: center;
     alignment: center;
