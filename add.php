@@ -7,7 +7,7 @@ include("blogHeader.php");
     <section id="mainSectionAdd" class="grid-70 tablet-grid-70 mobile-grid-70">
 
 
-        <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="get">
+        <form action="<? echo $_SERVER["PHP_SELF"] ?>" method="POST">
             <!-- action="showBugs.php" method="get" -->
             <table>
                 <tr>
