@@ -1,5 +1,6 @@
 <?php
 include("DBConnection.php");
+include("Functions.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
