@@ -1,19 +1,8 @@
 
-#figHeader{
-    width: 250px;
-}
-
-#lowerBan{
-    height: 100px;
-    width: 960px;
-}
-
-#wifie{
-    width: 240px;
-}
 #article1{
 
 }
+
 #article1Side{
     background-color: #DBC9DF;
     color: white;
@@ -21,34 +10,9 @@
     padding: 0px 10px 10px 10px;
     width: 100%;
 }
-h1, h2, h3 {
-    text-transform: capitalize;
-    margin: 0 0 0 0px;
-    padding: 0px 0 0 0px;
-}
 
-h2, h3 {
-    padding: 10px 0 0 0px;
-}
-
-#article2Side{
-    background-color: #782A7E;
-    color: white;
-    margin: 0 0 0 0px;
-    padding: 0px 10px 10px 10px;
-    width: 100%;
-}
 
 #mainSection{
     margin: 0 0 0 -2%;
 }
-#wifie{
-    margin: 0 0 0 -2%;
-}
-main > section > article > h1{
-    font-size: 18pt;
-}
 
-main > section > article > span{
-    vertical-align: top;
-}

@@ -34,7 +34,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #DBC9DF;
+    background-color: darkslategrey;
     color: white;
 }
 li:last-child {
